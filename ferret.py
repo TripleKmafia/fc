@@ -95,7 +95,7 @@ def idleLoop():
 			time.sleep((secrets.randbelow(POLL_TIME) + POLL_TIME) * 30)	
 		except Exception as e: #DEBUGGINZ
 			time.sleep((secrets.randbelow(POLL_TIME) + POLL_TIME) * 30)	
-			boot();
+			idleLoop();
 
 #WTF DO I CALL DEEZ???? UTILS
 
